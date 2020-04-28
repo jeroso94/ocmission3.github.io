@@ -1,0 +1,44 @@
+//Localisation = sass/components/buttons
+.index-button-tbs{
+	display: flex;
+	margin: 50px auto 150px auto;
+	width: 250px;
+	height: 50px;
+	@include grafik1;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+
+	.btn{
+		position: absolute;
+		font-size: 1.5em;
+		align-self: center;
+		left:25px;
+
+		&__firstdot{
+			opacity: 0;
+			animation: soon 7s infinite;
+		}
+
+		&__seconddot{
+			opacity: 0;
+			animation: soon 7s 300ms infinite;
+		}
+
+		&__thirddot{
+			opacity: 0;
+			animation: soon 7s 600ms infinite;
+		}
+
+	}
+}
+
+@keyframes soon{
+	0%,10%,30%,50%,70%,90%{
+		opacity: 0;
+	}
+
+	20%,40%,60%,80%,100%{
+		opacity: 1;
+	}
+}
