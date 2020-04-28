@@ -1,0 +1,9 @@
+//Localisation = sass/layouts/header
+#index-header{
+	@include grafik1;
+	
+	.index-header-title{
+		padding: 25px 0px;
+		text-align: center;
+	}
+}

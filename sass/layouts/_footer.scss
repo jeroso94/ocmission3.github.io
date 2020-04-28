@@ -1,0 +1,48 @@
+//Localisation = sass/layouts/footer
+.index-footer{
+	@include grafik1;
+	@include clearfix;
+}
+
+.ontop{
+	position: fixed;
+	left:0;
+	bottom: -75px;
+}
+
+.index-ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.index-legals, .index-contact{
+	padding: 25px 15px;
+	width: 100%;
+	&:hover{
+		animation: wiggle 820ms;
+	}
+	
+}
+
+.index-contact{
+	text-align: right;
+}
+
+@keyframes wiggle{
+	10%, 90% {
+		transform: translateX(-2px);
+	}
+
+	20%, 80% {
+		transform: translateX(4px);
+	}
+	
+	30%, 50%, 70% {
+		transform: translateX(-8px);
+	}
+	
+	40%, 60% {
+		transform: translateX(8px);
+	}
+}

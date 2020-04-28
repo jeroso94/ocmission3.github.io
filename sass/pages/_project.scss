@@ -1,0 +1,79 @@
+//Localisation = sass/pages/project
+.logo{
+	width: 2em;
+	height:100%;
+}
+
+.clipart{
+	width: 7em;
+	height: 100%;
+}
+
+.resto-choix{
+	@include mobile-only{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	display: flex;
+	justify-content: space-between;
+}
+
+.service{
+	@include mobile-only{
+		display: flex;
+		flex-direction: column;
+	}
+	margin: 50px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&--animated{
+		cursor: pointer;
+		&:hover + .h_bar{
+			transform:scaleX(1)
+		}
+	}
+}
+
+.h_bar{
+	margin-bottom: 25px;
+	width:100%;
+	height: 3px;
+	border-radius: 50%;
+	background-color: goldenrod;
+	transform-origin: left ;
+	transform:scaleX(0);
+	transition: all 300ms ease-out;	
+}
+
+.resto-container{
+	@include container-background-style;
+	@include box-shadow;
+	padding: 35px 70px;
+	box-sizing: content-box;
+	width: 60% ;
+}
+
+.resto-1-container{
+	background-color: map-get($omf-palette, omf-pink);
+}
+
+.resto-2-container{
+	background-color: map-get($omf-palette, omf-purple);
+}
+
+.resto-3-container{
+	background-color: map-get($omf-palette, omf-grey);
+}
+
+.resto-footer-stamp{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.resto-1-footer-stamp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,46 @@
+#index-body{
+    font-family: map-get($omf-font-family, omf-index-default);
+
+    .index-header-title{
+        font-size: map-get($omf-font-size, omf-index-title);
+    }
+
+    #index-button-tbs{
+        font-size: map-get($omf-font-size, omf-index-button-content);
+    }
+
+    .index-footer{
+        font-size: map-get($omf-font-size, omf-index-subtitle);
+    }
+}
+
+
+#resto-body{
+    .resto-header-title{    
+        font-size: map-get($omf-font-size, omf-resto-title);
+    }
+
+    .resto-header-title{
+        text-align: center;
+    }
+
+    .resto-1-header-title, .resto-1-footer-stamp{
+        font-family: map-get($omf-font-family, omf-resto-1-title);
+    }
+
+    #resto-1{
+        font-family: map-get($omf-font-family, omf-resto-1-service);
+
+        .resto-1-service{
+            font-size: map-get($omf-font-size, omf-resto-service);
+        }
+        .item .price{
+            font-size: map-get($omf-font-size, omf-resto-itemandprice);
+        }
+    }
+}
+
+.sign{
+    margin-left: 10px;
+    font-size: map-get($omf-font-size, omf-resto-sign);
+}

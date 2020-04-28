@@ -1,0 +1,33 @@
+//Localisation = sass/layouts/work
+
+.index-gallery{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	@include mobile-only {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	a{
+		width: 70%;
+		height: auto;
+		margin: 0 50px 50px 50px;
+		text-align: center;
+		overflow: hidden;
+		@include box-shadow;
+	}
+
+	.index-cover{
+		width: 100%;
+		transition: all 500ms ;
+
+		&--animated{
+			&:hover{
+				transform: scale(1.3);
+			}
+		}
+	}
+}
