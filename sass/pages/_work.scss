@@ -1,9 +1,10 @@
 //Localisation = sass/layouts/work
 
 .index-gallery{
-	width: 100%;
+	max-width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	
 
 	@include mobile-only {
 		display: flex;
@@ -12,16 +13,16 @@
 	}
 	
 	a{
-		width: 70%;
+		width: 320px;
 		height: auto;
-		margin: 0 50px 50px 50px;
+		margin: 0 50px 50px 0;
 		text-align: center;
 		overflow: hidden;
 		@include box-shadow;
 	}
 
 	.index-cover{
-		width: 100%;
+		max-width: 320px;
 		transition: all 500ms ;
 
 		&--animated{

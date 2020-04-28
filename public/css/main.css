@@ -178,9 +178,9 @@ a {
   }
 }
 .index-gallery {
-  width: 100%;
+  max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (max-width: 1023px) {
   .index-gallery {
@@ -190,15 +190,15 @@ a {
   }
 }
 .index-gallery a {
-  width: 70%;
+  width: 320px;
   height: auto;
-  margin: 0 50px 50px 50px;
+  margin: 0 50px 50px 0;
   text-align: center;
   overflow: hidden;
   box-shadow: 1px 1px 10px 5px lightgrey;
 }
 .index-gallery .index-cover {
-  width: 100%;
+  max-width: 320px;
   transition: all 500ms;
 }
 .index-gallery .index-cover--animated:hover {
