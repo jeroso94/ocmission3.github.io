@@ -1,0 +1,31 @@
+// Mixins charte-grafik1
+@mixin grafik1 {
+  background-color: map-get($omf-palette, omf-green);
+	color: map-get($omf-palette, omf-yellow);
+}
+
+@mixin clearfix{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and(max-width: map-get($breakpoints, mobile)){
+    @content;
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 1px 1px 10px 5px lightgrey;
+}
+
+@mixin container-background-style {
+  width: 640px;
+	margin-top: 25px;
+	margin-bottom: 125px;
+	margin-left: auto;
+	margin-right: auto;
+}
