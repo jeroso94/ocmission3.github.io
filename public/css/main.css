@@ -203,6 +203,7 @@ a {
 }
 .index-gallery .index-cover--animated:hover {
   transform: scale(1.3);
+  opacity: 0.5;
 }
 
 .logo {
