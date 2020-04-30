@@ -205,7 +205,6 @@ a {
 }
 @media screen and (max-width: 1023px) {
   .index-gallery a {
-    width: 300px;
     margin: 0 0 50px 0;
   }
 }
