@@ -1,3 +1,7 @@
+.hcenter{
+    text-align: center;
+}
+
 #index-body{
     font-family: map-get($omf-font-family, omf-index-default);
 
@@ -16,15 +20,11 @@
 
 
 #resto-body{
-    .resto-header-title{    
+    .resto_title-fontsize{    
         font-size: map-get($omf-font-size, omf-resto-title);
     }
 
-    .resto-header-title{
-        text-align: center;
-    }
-
-    .resto-1-header-title, .resto-1-footer-stamp{
+    .resto-1_title-font{
         font-family: map-get($omf-font-family, omf-resto-1-title);
     }
 
@@ -40,7 +40,7 @@
     }
 }
 
-.sign{
+.sign_text{
     margin-left: 10px;
     font-size: map-get($omf-font-size, omf-resto-sign);
 }
