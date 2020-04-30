@@ -50,6 +50,11 @@
 .resto-container{
 	@include container-background-style;
 	@include box-shadow;
+	@include mobile-only{
+		width: 90%;
+		padding: 35px 10px;
+	}
+
 	padding: 35px 70px;
 	box-sizing: content-box;
 	width: 60% ;
