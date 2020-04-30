@@ -161,7 +161,7 @@ a {
 }
 @media screen and (max-width: 1023px) {
   .index-legals, .index-contact {
-    padding: 15px 10px;
+    padding: 25px 10px;
   }
 }
 
