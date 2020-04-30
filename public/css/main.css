@@ -43,6 +43,7 @@ a {
 
 .wide {
   width: 100%;
+  border: none;
 }
 
 #index-body {
@@ -142,7 +143,7 @@ a {
 .ontop {
   position: fixed;
   left: 0;
-  bottom: -75px;
+  bottom: -76px;
 }
 
 .index-ul {
@@ -157,6 +158,11 @@ a {
 }
 .index-legals:hover, .index-contact:hover {
   animation: wiggle 820ms;
+}
+@media screen and (max-width: 1023px) {
+  .index-legals, .index-contact {
+    padding: 15px 10px;
+  }
 }
 
 .index-contact {
@@ -196,6 +202,12 @@ a {
   text-align: center;
   overflow: hidden;
   box-shadow: 1px 1px 10px 5px lightgrey;
+}
+@media screen and (max-width: 1023px) {
+  .index-gallery a {
+    width: 300px;
+    margin: 0 0 50px 0;
+  }
 }
 .index-gallery .index-cover {
   max-width: 320px;
