@@ -285,6 +285,12 @@ a {
   box-sizing: content-box;
   width: 60%;
 }
+@media screen and (max-width: 1023px) {
+  .resto-container {
+    width: 90%;
+    padding: 35px 10px;
+  }
+}
 
 .resto-1-container {
   background-color: #f5c7c7c7;
