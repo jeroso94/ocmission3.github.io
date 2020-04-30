@@ -46,6 +46,10 @@ a {
   border: none;
 }
 
+.hcenter {
+  text-align: center;
+}
+
 #index-body {
   font-family: arial;
 }
@@ -59,13 +63,10 @@ a {
   font-size: 1.3em;
 }
 
-#resto-body .resto-header-title {
+#resto-body .resto_title-fontsize {
   font-size: 3em;
 }
-#resto-body .resto-header-title {
-  text-align: center;
-}
-#resto-body .resto-1-header-title, #resto-body .resto-1-footer-stamp {
+#resto-body .resto-1_title-font {
   font-family: redressedregular;
 }
 #resto-body #resto-1 {
@@ -78,7 +79,7 @@ a {
   font-size: 1.3em;
 }
 
-.sign {
+.sign_text {
   margin-left: 10px;
   font-size: 2em;
 }
@@ -304,12 +305,11 @@ a {
   background-color: #ebebeb;
 }
 
-.resto-footer-stamp {
+.sign_margin {
   margin-top: 50px;
-  text-align: center;
 }
 
-.resto-1-footer-stamp {
+.resto-1-sign_frameset {
   display: flex;
   justify-content: center;
   align-items: center;
