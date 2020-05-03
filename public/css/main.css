@@ -37,13 +37,23 @@ a {
   font-weight: normal;
   font-style: normal;
 }
-a {
-  color: #ffd000;
+.logo {
+  width: 2em;
+  height: 100%;
+}
+
+.clipart {
+  width: 7em;
+  height: 100%;
 }
 
 .wide {
   width: 100%;
   border: none;
+}
+
+a {
+  color: #ffd000;
 }
 
 .hcenter {
@@ -56,6 +66,58 @@ a {
 #index-body .index-header-title {
   font-size: 3em;
 }
+#index-body .cover_lne p, #index-body .cover_lne .logo {
+  font-size: 2.5em;
+  color: black;
+}
+#index-body .cover_lne p:nth-child(2), #index-body .cover_lne .logo:nth-child(2) {
+  font-family: redressedregular;
+}
+#index-body .cover_lne p:nth-child(3), #index-body .cover_lne .logo:nth-child(3) {
+  font-family: "Comic Sans MS";
+}
+#index-body .cover_lcf p {
+  font-size: 2.5em;
+}
+#index-body .cover_lcf p:nth-child(1) {
+  font-family: "Courier New";
+}
+#index-body .cover_lcf p:nth-child(1) .firsthue-start {
+  color: #e38913;
+}
+#index-body .cover_lcf p:nth-child(1) .firsthue-end {
+  color: #8f5bfe;
+}
+#index-body .cover_lcf p:nth-child(2) {
+  font-family: "Times New Roman";
+  color: #e38913;
+}
+#index-body .cover_ldp p {
+  font-size: 2.5em;
+  color: rgba(0, 89, 255, 0.801);
+}
+#index-body .cover_ldp p:nth-child(1) {
+  font-family: "";
+}
+#index-body .cover_ldp p:nth-child(2) {
+  font-family: "Comic Sans MS";
+}
+#index-body .cover_lpg p {
+  font-size: 2.5em;
+  color: #25887c;
+}
+#index-body .cover_lpg p:nth-child(1) {
+  font-family: "Trebuchet MS";
+}
+#index-body .cover_lpg p:nth-child(1) .secondhue-start {
+  color: #3d923a;
+}
+#index-body .cover_lpg p:nth-child(1) .secondhue-end {
+  color: #bfff7f;
+}
+#index-body .cover_lpg p:nth-child(2) {
+  font-family: "Comic Sans MS";
+}
 #index-body #index-button-tbs {
   font-size: 1.5em;
 }
@@ -66,8 +128,26 @@ a {
 #resto-body .resto_title-fontsize {
   font-size: 3em;
 }
+#resto-body .resto-2-container .firsthue-start {
+  color: #e38913;
+}
+#resto-body .resto-2-container .firsthue-end {
+  color: #8f5bfe;
+}
+#resto-body .resto-3-container h1 {
+  color: rgba(0, 89, 255, 0.801);
+}
+#resto-body .resto-4-container .secondhue-start {
+  color: #3d923a;
+}
+#resto-body .resto-4-container .secondhue-end {
+  color: #bfff7f;
+}
 #resto-body .resto-1_title-font {
   font-family: redressedregular;
+}
+#resto-body .resto-4_title-font {
+  font-family: "Trebuchet MS";
 }
 #resto-body #resto-1 {
   font-family: desyrelregular;
@@ -76,6 +156,24 @@ a {
   font-size: 1.7em;
 }
 #resto-body #resto-1 .item .price {
+  font-size: 1.3em;
+}
+#resto-body #resto-3 {
+  font-family: "Comic Sans MS";
+}
+#resto-body #resto-3 .resto-4-service {
+  font-size: 1.7em;
+}
+#resto-body #resto-3 .item .price {
+  font-size: 1.3em;
+}
+#resto-body #resto-4 {
+  font-family: "Comic Sans MS";
+}
+#resto-body #resto-4 .resto-4-service {
+  font-size: 1.7em;
+}
+#resto-body #resto-4 .item .price {
   font-size: 1.3em;
 }
 
@@ -201,36 +299,42 @@ a {
     align-items: center;
   }
 }
-.index-gallery a {
-  width: 320px;
-  height: auto;
+.index-gallery .cover {
+  width: 400px;
+  height: 600px;
   margin: 0 50px 50px 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   box-shadow: 1px 1px 10px 5px lightgrey;
 }
 @media screen and (max-width: 1023px) {
-  .index-gallery a {
+  .index-gallery .cover {
+    width: 95%;
+    max-width: 400px;
     margin: 0 0 50px 0;
   }
 }
-.index-gallery .index-cover {
-  max-width: 320px;
+.index-gallery .cover--animated {
   transition: all 500ms;
 }
-.index-gallery .index-cover--animated:hover {
+.index-gallery .cover--animated:hover {
   transform: scale(1.3);
   opacity: 0.5;
 }
-
-.logo {
-  width: 2em;
-  height: 100%;
+.index-gallery .cover_lne {
+  background-color: #f5c7c7c7;
 }
-
-.clipart {
-  width: 7em;
-  height: 100%;
+.index-gallery .cover_lcf {
+  background-color: #f0c7f53d;
+}
+.index-gallery .cover_ldp {
+  background-color: #ebebeb;
+}
+.index-gallery .cover_lpg {
+  background-color: #f8f9fb;
 }
 
 .resto-choix {
@@ -303,6 +407,10 @@ a {
 
 .resto-3-container {
   background-color: #ebebeb;
+}
+
+.resto-4-container {
+  background-color: #f8f9fb;
 }
 
 .sign_margin {

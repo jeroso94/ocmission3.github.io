@@ -17,27 +17,46 @@
 		align-items: center;
 	}
 	
-	a{
-		width: 320px;
-		height: auto;
+	.cover{
+		width: 400px;
+		height:600px;
 		margin: 0 50px 50px 0;
 		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		overflow: hidden;
 		@include box-shadow;
-		@include mobile-only{
-			margin: 0 0 50px 0;
-		}
-	}
 
-	.index-cover{
-		max-width: 320px;
-		transition: all 500ms ;
+		@include mobile-only{
+			width:95%;
+			max-width: 400px;
+			margin: 0 0 50px 0;
+		}	
 
 		&--animated{
+			transition: all 500ms ;
 			&:hover{
 				transform: scale(1.3);
 				opacity: 0.5;
 			}
 		}
+
+		&_lne{
+			background-color: map-get($omf-palette, omf-pink);
+		}
+
+		&_lcf{
+			background-color: map-get($omf-palette, omf-purple);
+		}
+
+		&_ldp{
+			background-color: map-get($omf-palette, omf-grey);
+		}
+
+		&_lpg{
+			background-color: map-get($omf-palette, omf-white);
+		}
+
 	}
 }

@@ -1,13 +1,4 @@
 //Localisation = sass/pages/project
-.logo{
-	width: 2em;
-	height:100%;
-}
-
-.clipart{
-	width: 7em;
-	height: 100%;
-}
 
 .resto-choix{
 	@include mobile-only{
@@ -70,6 +61,10 @@
 
 .resto-3-container{
 	background-color: map-get($omf-palette, omf-grey);
+}
+
+.resto-4-container{
+	background-color: map-get($omf-palette, omf-white);
 }
 
 .sign_margin{
