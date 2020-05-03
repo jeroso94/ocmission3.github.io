@@ -23,17 +23,43 @@
     font-style: normal;
 }
 
-$omf-palette: (omf-green: rgb(37, 136, 124),
+$omf-palette: (
+    omf-white: #f8f9fb,
+    omf-green: rgb(37, 136, 124),
     omf-yellow:rgb(255, 208, 0),
     omf-pink: #f5c7c7c7,
     omf-purple: #f0c7f53d, 
-    omf-grey: #ebebeb
+    omf-grey: #ebebeb,
+    omf-blue:rgba(0, 89, 255, 0.801),
+    omf-firsthue-start : #e38913,
+    omf-firsthue-end : #8f5bfe,
+    omf-secondhue-start :#3d923a, 
+    omf-secondhue-end : #bfff7f,
+    omf-brown:#e38913
     );
-$omf-font-family: (omf-index-default: arial, omf-resto-1-title: redressedregular, omf-resto-1-service: desyrelregular);
+$omf-font-family: (
+    omf-index-default: arial, 
+
+    omf-cover-1-menulabel: 'Comic Sans MS',
+    omf-cover-2-menulabel: 'Times New Roman',
+    omf-cover-3-menulabel: 'Comic Sans MS',
+    omf-cover-4-menulabel: 'Comic Sans MS',
+
+    omf-resto-1-title: redressedregular, 
+    omf-resto-1-service: desyrelregular, 
+
+    omf-resto-2-title : 'Courier New', 
+    omf-resto-3-title:'',
+    omf-resto-3-service: 'Comic Sans MS',
+    omf-resto-4-title:'Trebuchet MS',
+    omf-resto-4-service: 'Comic Sans MS'
+    );
 $omf-font-size: (
     omf-index-title: 3em, 
     omf-index-subtitle: 1.3em,
     omf-index-button-content: 1.5em,
+
+    omf-cover-title: 2.5em,
 
     omf-resto-title: 3em,
     omf-resto-service: 1.7em,
