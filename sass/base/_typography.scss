@@ -1,4 +1,7 @@
 
+//Localisation = sass/base/typography
+// Feuille de style pour la typographie sur l'ensemble du site
+
 a{
     color: map-get($omf-palette, omf-yellow);
 }
@@ -7,14 +10,16 @@ a{
     text-align: center;
 }
 
-#index-body{
+// Typographie appliquée à l'ensemble de la page d'accueil
+#main{
     font-family: map-get($omf-font-family, omf-index-default);
 
-    .index-header-title{
+    .top-banner__title{
         font-size: map-get($omf-font-size, omf-index-title);
     }
 
-    .cover_lne p, .cover_lne .logo{
+    // Typographie appliquée à "La note enchantée"
+    .cover__lne p, .cover__lne .logo{
         font-size: map-get($omf-font-size, omf-cover-title);
         color:black;
         &:nth-child(2){
@@ -25,7 +30,8 @@ a{
         }
     }
 
-    .cover_lcf p{
+    // Typographie appliquée à "Le chic à la française"
+    .cover__lcf p{
         font-size: map-get($omf-font-size, omf-cover-title);
         &:nth-child(1){
             font-family: map-get($omf-font-family, omf-resto-2-title);
@@ -37,7 +43,8 @@ a{
         }
     }
 
-    .cover_ldp p{
+    // Typographie appliquée à "Le délice des papilles"
+    .cover__ldp p{
         font-size: map-get($omf-font-size, omf-cover-title);
         color: map-get($omf-palette, omf-blue);
         &:nth-child(1){
@@ -48,7 +55,8 @@ a{
         }
     }
 
-    .cover_lpg p{
+    // Typographie appliquée à "La palette du goût"
+    .cover__lpg p{
         font-size: map-get($omf-font-size, omf-cover-title);
         color: map-get($omf-palette, omf-green);
         &:nth-child(1){
@@ -60,45 +68,32 @@ a{
         }
     }
 
-    #index-button-tbs{
+    // Typographie appliquée au bouton "Prochainement..."
+    .button{
         font-size: map-get($omf-font-size, omf-index-button-content);
     }
 
-    .index-footer{
+    // Typographie appliquée aux boutons "Mentions légales" et "Contactez-nous" 
+    .bottom-banner{
         font-size: map-get($omf-font-size, omf-index-subtitle);
     }
 }
 
-
-#resto-body{
-    .resto_title-fontsize{    
+// Typographie appliquée à l'ensemble des menus
+#main__resto{
+    .resto__title-fontsize{    
         font-size: map-get($omf-font-size, omf-resto-title);
     }
 
-    .resto-2-container{
-        @include firsthue;
-    }
-
-    .resto-3-container h1{
-        color: map-get($omf-palette, omf-blue);
-    }
-
-    .resto-4-container{
-        @include secondhue;
-    }
-
-    .resto-1_title-font{
+    // Typographie appliquée à l'ensemble au menu "La note enchantée"
+    .resto-lne__title-font{
         font-family: map-get($omf-font-family, omf-resto-1-title);
     }
 
-    .resto-4_title-font{
-        font-family: map-get($omf-font-family, omf-resto-4-title);
-    }
-
-    #resto-1{
+    #resto-lne{
         font-family: map-get($omf-font-family, omf-resto-1-service);
 
-        .resto-1-service{
+        .resto-lne__service-fontsize{
             font-size: map-get($omf-font-size, omf-resto-service);
         }
         .item .price{
@@ -106,10 +101,35 @@ a{
         }
     }
 
-    #resto-3{
+    // Typographie appliquée à l'ensemble au menu "Le chic à la française"
+    .container__resto-lcf{
+        @include firsthue;
+
+        .resto-lcf__title-font{
+            font-family: map-get($omf-font-family, omf-resto-2-title);
+        }
+
+        .resto-lcf__color-starter{
+            color: map-get($omf-palette, omf-brown);
+        }
+        .resto-lcf__color-maincourse{
+            color: map-get($omf-palette, omf-darkpurple);
+        }
+        .resto-lcf__color-dessert{
+            color: map-get($omf-palette, omf-lightpurple);
+        }
+    }
+
+    // Typographie appliquée à l'ensemble au menu "Le délice des papilles"
+
+    .resto-ldp__title-font{
+        font-family: map-get($omf-font-family, omf-resto-3-title);
+    }
+
+    #resto-ldp{
         font-family: map-get($omf-font-family, omf-resto-3-service);
 
-        .resto-4-service{
+        .resto-ldp__service-fontsize{
             font-size: map-get($omf-font-size, omf-resto-service);
         }
         .item .price{
@@ -117,10 +137,15 @@ a{
         }
     }
 
-    #resto-4{
+    .container__resto-ldp h1{
+        color: map-get($omf-palette, omf-blue);
+    }
+
+    // Typographie appliquée à l'ensemble au menu "La palette du goût"
+    #resto-lpg{
         font-family: map-get($omf-font-family, omf-resto-4-service);
 
-        .resto-4-service{
+        .resto-lpg__service-fontsize{
             font-size: map-get($omf-font-size, omf-resto-service);
         }
         .item .price{
@@ -128,9 +153,16 @@ a{
         }
     }
 
-    
+    .container__resto-lpg{
+        @include secondhue;
+    }
+
+    .resto-lpg__title-font{
+        font-family: map-get($omf-font-family, omf-resto-4-title);
+    }  
 }
 
+// Typographie appliquée à la signature des restaurants
 .sign_text{
     margin-left: 10px;
     font-size: map-get($omf-font-size, omf-resto-sign);

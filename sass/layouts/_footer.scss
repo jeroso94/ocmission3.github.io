@@ -1,5 +1,8 @@
+
 //Localisation = sass/layouts/footer
-.index-footer{
+// Feuille de style pour le pied de page
+
+.bottom-banner{
 	@include grafik1;
 	@include clearfix;
 }
@@ -10,28 +13,34 @@
 	bottom: -76px;
 }
 
-.index-ul{
+.button-frameset{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
-.index-legals, .index-contact{
+// Mise en page des boutons "Mentions légales" et "Contactez-nous" à partir de 1024px
+.legals, .contact{
 	padding: 25px 15px;
 	width: 100%;
+
+	// Effet "Wiggle" au survol de la souris sur les boutons "Mentions légales" et "Contactez-nous"
+	// Période: 820ms
 	&:hover{
 		animation: wiggle 820ms;
 	}
 	
+	// Adaptation de mise en page des boutons "Mentions légales" et "Contactez-nous" jusqu'à 1023px
 	@include mobile_only{
 		padding: 25px 10px;
 	}
 }
 
-.index-contact{
+.contact{
 	text-align: right;
 }
 
+// Définition de l'animation "Wiggle"
 @keyframes wiggle{
 	10%, 90% {
 		transform: translateX(-2px);

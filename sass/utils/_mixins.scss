@@ -1,4 +1,4 @@
-// Mixins charte-grafik1
+// Implémentation charte graphique du site
 @mixin grafik1 {
   background-color: map-get($omf-palette, omf-green);
 	color: map-get($omf-palette, omf-yellow);
@@ -12,16 +12,19 @@
   }
 }
 
+// Implémentation Responsive
 @mixin mobile-only {
   @media screen and(max-width: map-get($breakpoints, mobile)){
     @content;
   }
 }
 
+// Implémentation des ombres sur les couvertures et les menus
 @mixin box-shadow {
   box-shadow: 1px 1px 10px 5px lightgrey;
 }
 
+// Mise en pages du cadre des menus
 @mixin container-background-style {
   width: 640px;
 	margin-top: 25px;
@@ -30,6 +33,7 @@
 	margin-right: auto;
 }
 
+// Implémentation de la nuance pour "Le chic à la française"
 @mixin firsthue {
   .firsthue-start{
     color:map-get($omf-palette, omf-firsthue-start);
@@ -39,6 +43,7 @@
   }
 }
 
+// Implémentation de la nuance pour "La palette du goût"
 @mixin secondhue {
   .secondhue-start{
     color:map-get($omf-palette, omf-secondhue-start);

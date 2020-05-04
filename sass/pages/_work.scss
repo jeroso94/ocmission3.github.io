@@ -1,22 +1,21 @@
+
 //Localisation = sass/layouts/work
+// Feuille de style pour la page d'accueil (hors en-tête et pied-de-page)
 
-#index-provider{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.index-gallery{
+// Mise en forme de la galerie des menus à partir de 1024px
+.gallery{
 	max-width: 100%;
 	display: flex;
 	justify-content: center;
 	
-
+	// Adaptation mise en forme de la galerie des menus jusqu'à 1023px
 	@include mobile-only {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	
+	// Mise en forme des couvertures de menus à partir de 1024px
 	.cover{
 		width: 400px;
 		height:600px;
@@ -25,15 +24,20 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		// Pour que l'effet de zoom ne sorte pas du cadre
 		overflow: hidden;
+
 		@include box-shadow;
 
+		// Adaptation mise en forme des couvertures de menus jusqu'à 1023px
 		@include mobile-only{
 			width:95%;
 			max-width: 400px;
 			margin: 0 0 50px 0;
 		}	
 
+		// Effet de zoom+fondu au survol souris sur les couvertures de menus
 		&--animated{
 			transition: all 500ms ;
 			&:hover{
@@ -42,19 +46,20 @@
 			}
 		}
 
-		&_lne{
+		// Application charte couleur sur la couverture des menus
+		&__lne{
 			background-color: map-get($omf-palette, omf-pink);
 		}
 
-		&_lcf{
+		&__lcf{
 			background-color: map-get($omf-palette, omf-purple);
 		}
 
-		&_ldp{
+		&__ldp{
 			background-color: map-get($omf-palette, omf-grey);
 		}
 
-		&_lpg{
+		&__lpg{
 			background-color: map-get($omf-palette, omf-white);
 		}
 

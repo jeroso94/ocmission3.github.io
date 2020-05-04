@@ -1,5 +1,8 @@
+
 //Localisation = sass/components/buttons
-.index-button-tbs{
+// Feuille de style pour le bouton "Prochainement..."
+
+.button{
 	display: flex;
 	margin: 50px auto 150px auto;
 	width: 250px;
@@ -9,23 +12,24 @@
 	position: relative;
 	cursor: pointer;
 
-	.btn{
+	.tbs{
 		position: absolute;
-		font-size: 1.5em;
 		align-self: center;
 		left:25px;
 
-		&__firstdot{
+		// Effet des points de suspensions animés au chargement de la page d'accueil
+		// Période: 7s - retard cumulé de 300ms par point - Boucle infinie
+		&__firstdot--animated{
 			opacity: 0;
 			animation: soon 7s infinite;
 		}
 
-		&__seconddot{
+		&__seconddot--animated{
 			opacity: 0;
 			animation: soon 7s 300ms infinite;
 		}
 
-		&__thirddot{
+		&__thirddot--animated{
 			opacity: 0;
 			animation: soon 7s 600ms infinite;
 		}
@@ -33,6 +37,7 @@
 	}
 }
 
+// Définition de l'animation des points de suspensions animés
 @keyframes soon{
 	0%,10%,30%,50%,70%,90%{
 		opacity: 0;

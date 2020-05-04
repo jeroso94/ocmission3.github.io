@@ -1,4 +1,7 @@
-// Variables
+
+// Définitions des variables
+
+// Définition police de caractère pour "La note enchantée" - Nom de restaurant
 @font-face {
     font-family: 'redressedregular';
     src: url('../../public/font/Redressed-webfont.eot');
@@ -11,6 +14,7 @@
     font-style: normal;
 }
 
+// Définition police de caractère pour "La note enchantée" - liste des plats
 @font-face {
     font-family: 'desyrelregular';
     src: url('../../public/font/desyrel-webfont.eot');
@@ -23,50 +27,76 @@
     font-style: normal;
 }
 
+// Définition de la palette de couleurs du site
 $omf-palette: (
+    // Charte couleur du site
     omf-white: #f8f9fb,
     omf-green: rgb(37, 136, 124),
     omf-yellow:rgb(255, 208, 0),
+
+    // Charte couleur pour "La note enchantée"
     omf-pink: #f5c7c7c7,
+
+    // Charte couleur pour "Le chic à la française"
     omf-purple: #f0c7f53d, 
-    omf-grey: #ebebeb,
-    omf-blue:rgba(0, 89, 255, 0.801),
     omf-firsthue-start : #e38913,
     omf-firsthue-end : #8f5bfe,
+    omf-brown:#e38913,
+    omf-darkpurple: purple,
+    omf-lightpurple:#8f5bfe,
+
+    // Charte couleur pour "Le délice des papilles"
+    omf-grey: #ebebeb,
+    omf-blue:rgba(0, 89, 255, 0.801),
+    
+    // Charte couleur pour "La palette du goût"
     omf-secondhue-start :#3d923a, 
-    omf-secondhue-end : #bfff7f,
-    omf-brown:#e38913
+    omf-secondhue-end : #bfff7f
     );
+
+// Initialisation des variables pour les polices de caractères
 $omf-font-family: (
+    // Polices de caractères pour le site
     omf-index-default: arial, 
 
+    // Polices de caractères pour "La note enchantée"
     omf-cover-1-menulabel: 'Comic Sans MS',
-    omf-cover-2-menulabel: 'Times New Roman',
-    omf-cover-3-menulabel: 'Comic Sans MS',
-    omf-cover-4-menulabel: 'Comic Sans MS',
-
     omf-resto-1-title: redressedregular, 
     omf-resto-1-service: desyrelregular, 
 
+    // Polices de caractères pour "Le chic à la française"
+    omf-cover-2-menulabel: 'Times New Roman',
     omf-resto-2-title : 'Courier New', 
+
+    // Polices de caractères pour "Le délice des papilles"
+    omf-cover-3-menulabel: 'Comic Sans MS',
     omf-resto-3-title:'',
     omf-resto-3-service: 'Comic Sans MS',
+
+    // Polices de caractères pour "La palette du goût"
+    omf-cover-4-menulabel: 'Comic Sans MS',
     omf-resto-4-title:'Trebuchet MS',
     omf-resto-4-service: 'Comic Sans MS'
     );
+
+// Initialisation des variables pour la taille des caractères
 $omf-font-size: (
+    // Taille des caractères pour le site
     omf-index-title: 3em, 
     omf-index-subtitle: 1.3em,
     omf-index-button-content: 1.5em,
 
+    // Taille des caractères pour les titres en couverture
     omf-cover-title: 2.5em,
 
+    // Taille des caractères pour les caractères qui composent les menus
     omf-resto-title: 3em,
-    omf-resto-service: 1.7em,
+    omf-resto-service: 1.5em,
     omf-resto-itemandprice: 1.3em,
     omf-resto-sign: 2em
     );
 
+// Initialisation des breakpoints Responsive
 $breakpoints: (
     mobile: 1023px
     );
