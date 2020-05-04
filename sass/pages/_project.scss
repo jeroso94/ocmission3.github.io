@@ -1,32 +1,77 @@
-//Localisation = sass/pages/project
 
+//Localisation = sass/pages/project
+// Feuille de style pour la page d'accueil (hors en-tête et pied-de-page)
+
+// Mise en page du cadre du menu à partir de 1024px
+.container__resto{
+	padding: 60px 70px;
+	box-sizing: content-box;
+	width: 60% ;
+	@include container-background-style;
+	@include box-shadow;
+
+	// Adaptation mise en forme du menu jusqu'à 1023px
+	@include mobile-only{
+		width: 90%;
+		padding: 35px 10px;
+	}
+
+}
+
+// Application charte couleur sur le fond des menus
+.container__resto-lne{
+	background-color: map-get($omf-palette, omf-pink);
+}
+
+.container__resto-lcf{
+	background-color: map-get($omf-palette, omf-purple);
+}
+
+.container__resto-ldp{
+	background-color: map-get($omf-palette, omf-grey);
+}
+
+.container__resto-lpg{
+	background-color: map-get($omf-palette, omf-white);
+}
+
+// Mise en page du titre du service à partir de 1024px
 .resto-choix{
+	display: flex;
+	justify-content: space-between;
+
+	// Adaptation mise en page du titre du service jusqu'à 1023px
 	@include mobile-only{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	display: flex;
-	justify-content: space-between;
 }
 
+// Mise en page de la liste des plats à partir de 1024px
 .service{
-	@include mobile-only{
-		display: flex;
-		flex-direction: column;
-	}
 	margin: 50px 0 0 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	// Effet de soulignement de gauche à droite sous le titre du service, au survol de la souris
 	&--animated{
 		cursor: pointer;
 		&:hover + .h_bar{
 			transform:scaleX(1)
 		}
 	}
+
+	// Adaptation mise en page de la liste des plats jusqu'à 1023px
+	@include mobile-only{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
+// Mise en forme de la ligne venant souligner le titre du service
+// Période: 300 ms - Décélération en fin de transition
 .h_bar{
 	margin-bottom: 25px;
 	width:100%;
@@ -38,40 +83,12 @@
 	transition: all 300ms ease-out;	
 }
 
-.resto-container{
-	@include container-background-style;
-	@include box-shadow;
-	@include mobile-only{
-		width: 90%;
-		padding: 35px 10px;
-	}
-
-	padding: 35px 70px;
-	box-sizing: content-box;
-	width: 60% ;
-}
-
-.resto-1-container{
-	background-color: map-get($omf-palette, omf-pink);
-}
-
-.resto-2-container{
-	background-color: map-get($omf-palette, omf-purple);
-}
-
-.resto-3-container{
-	background-color: map-get($omf-palette, omf-grey);
-}
-
-.resto-4-container{
-	background-color: map-get($omf-palette, omf-white);
-}
-
+// Mise en page de la signature du restaurant
 .sign_margin{
 	margin-top: 50px;
 }
 
-.resto-1-sign_frameset{
+.resto-lne__sign-frameset{
 	display: flex;
 	justify-content: center;
 	align-items: center;
